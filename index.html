@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Reality - 새로운 차원의 시각 경험</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        // 로고 색상을 Tailwind CSS 설정에 추가합니다.
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yr-blue': '#0052FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 기본 폰트를 Noto Sans KR과 Inter로 설정합니다. */
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* 섹션 간의 부드러운 전환 효과를 위한 스타일 */
+        .section-padding {
+            padding: 6rem 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-lg shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-black text-yr-blue tracking-tight">Young Reality</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#technology" class="text-gray-600 hover:text-yr-blue font-medium transition">핵심 기술</a>
+                <a href="#milestones" class="text-gray-600 hover:text-yr-blue font-medium transition">성장 로드맵</a>
+                <a href="#contact" class="text-gray-600 hover:text-yr-blue font-medium transition">연락처</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Background Banner -->
+        <!-- 
+            'Yreal_banner_fin.jpg' 파일을 이 HTML 파일과 같은 폴더에 넣고 아래 style 속성에서 사용하세요.
+            이미지가 없을 경우를 대비해 어두운 회색 배경(bg-gray-800)을 기본으로 설정했습니다.
+        -->
+        <section id="home" class="relative bg-gray-800 bg-cover bg-center text-white pt-48 pb-32" style="background-image: url('Yreal_banner_fin.jpg');">
+            <!-- Overlay for text readability -->
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <div class="relative container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
+                    현실의 경계를 넘는<br class="md:hidden"> <span class="text-yr-blue">3차원 디스플레이</span> 기술
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                    Young Reality는 독자적인 라이트필드 기술로 세상에 없던 몰입 경험을 만듭니다.
+                </p>
+                <div class="mt-8">
+                    <a href="#contact" class="bg-yr-blue text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity text-lg">
+                        프로젝트 문의하기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="section-padding bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">핵심 기술</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                    하드웨어부터 소프트웨어까지, 3차원 디스플레이 구현을 위한 통합 솔루션을 개발합니다.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Tech Item 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yr-blue/10 mx-auto mb-6">
+                            <svg class="w-8 h-8 text-yr-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">모듈형 라이트필드 디스플레이</h3>
+                        <p class="text-gray-600">
+                            타일링 방식으로 대형화가 가능한 QHD급 고해상도 3차원 디스플레이 모듈입니다. 90도의 넓은 시야각을 제공하여 높은 몰입감을 선사합니다.
+                        </p>
+                    </div>
+                    <!-- Tech Item 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yr-blue/10 mx-auto mb-6">
+                            <svg class="w-8 h-8 text-yr-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">초정밀 광학 설계</h3>
+                        <p class="text-gray-600">
+                            Zemax 시뮬레이션을 통해 최적화된 특수 렌즈 어레이를 설계합니다. 모듈 간 이음새를 보정하는 독자 기술로 자연스러운 3차원 영상을 구현합니다.
+                        </p>
+                    </div>
+                    <!-- Tech Item 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yr-blue/10 mx-auto mb-6">
+                            <svg class="w-8 h-8 text-yr-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">통합 제어 소프트웨어</h3>
+                        <p class="text-gray-600">
+                            다중 디스플레이 모듈을 동시 제어하고, GPU 가속 기반 실시간 영상 처리 알고리즘으로 렌더링 속도를 개선했습니다. Blender, Unity 플러그인을 제공합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestones Section -->
+        <section id="milestones" class="section-padding bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">성장 로드맵</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-16">
+                    혁신적인 기술 개발부터 시장 진출까지, Young Reality는 차근차근 미래를 만들어가고 있습니다.
+                </p>
+                <div class="relative max-w-2xl mx-auto">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1/2 top-0 h-full w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- Milestone 1 -->
+                        <div class="relative">
+                            <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-yr-blue rounded-full transform -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow"></div>
+                            <div class="md:w-1/2 md:pr-8 text-right">
+                                <p class="font-bold text-yr-blue text-lg">2024</p>
+                                <h3 class="font-bold text-xl mt-1">기반 기술 확보 및 시제품 개발</h3>
+                                <p class="text-gray-600 mt-2">
+                                    예비창업패키지 선정 및 법인 설립. 모듈형 3차원 디스플레이 프로토타입 및 연동 S/W 개발 완료. 국내 특허 2건 출원.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Milestone 2 -->
+                        <div class="relative">
+                            <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow"></div>
+                            <div class="md:w-1/2 md:pl-8 md:ml-auto text-left">
+                                <p class="font-bold text-gray-500 text-lg">2025 2Q</p>
+                                <h3 class="font-bold text-xl mt-1">소비자용 모듈 출시</h3>
+                                <p class="text-gray-600 mt-2">
+                                    태블릿 PC 등에 적용 가능한 일반 소비자용 라이트필드 모듈 및 광학 소자를 출시하고 크라우드 펀딩을 진행합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Milestone 3 -->
+                        <div class="relative">
+                            <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow"></div>
+                            <div class="md:w-1/2 md:pr-8 text-right">
+                                <p class="font-bold text-gray-500 text-lg">2025 4Q</p>
+                                <h3 class="font-bold text-xl mt-1">B2B 디지털 사이니지 제품 출시</h3>
+                                <p class="text-gray-600 mt-2">
+                                    전시, 공연, 광고 시장을 타겟으로 한 B2B용 3차원 디지털 사이니지 제품을 공식 출시하고 파일럿 프로젝트를 수주합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Milestone 4 -->
+                        <div class="relative">
+                            <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow"></div>
+                            <div class="md:w-1/2 md:pl-8 md:ml-auto text-left">
+                                <p class="font-bold text-gray-500 text-lg">2026</p>
+                                <h3 class="font-bold text-xl mt-1">B2B/B2C 시장 본격 성장</h3>
+                                <p class="text-gray-600 mt-2">
+                                    대형 디스플레이 솔루션 라인업을 확대하고 콘텐츠 제작 도구 라이센싱을 통해 B2B 부문 매출 10억 달성을 목표로 합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-yr-blue text-white section-padding">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">새로운 현실을 함께 만듭니다</h2>
+                <p class="text-blue-100 mb-8 max-w-2xl mx-auto text-lg">
+                    Young Reality의 기술과 비전에 대해 더 궁금한 점이 있거나, <br>협업을 원하신다면 언제든지 편하게 연락 주세요.
+                </p>
+                <a href="mailto:contact@youngreality.co" class="bg-white text-yr-blue font-bold py-4 px-10 rounded-full hover:bg-gray-100 transition-colors text-xl inline-block">
+                    contact@youngreality.co
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">&copy; 2024 Young Reality. All Rights Reserved.</p>
+            <div class="text-sm text-gray-500">
+                <p>회사명: 영리얼리티 (Young Reality) | 대표: 김영록</p>
+                <p>사업자등록번호: 874-08-02797 | 주소: 서울특별시강남구봉은사로129, 7층727호A-144호</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
