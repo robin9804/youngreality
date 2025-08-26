@@ -55,14 +55,8 @@
 
     <main>
         <!-- Hero Section with Background Banner -->
-        <!-- 
-            'Yreal_banner_fin.jpg' 파일을 이 HTML 파일과 같은 폴더에 넣고 아래 style 속성에서 사용하세요.
-            이미지가 없을 경우를 대비해 어두운 회색 배경(bg-gray-800)을 기본으로 설정했습니다.
-        -->
-        <section id="home" class="relative bg-gray-800 bg-cover bg-center text-white pt-48 pb-32" style="background-image: url('Yreal_banner_fin.jpg');">
-            <!-- Overlay for text readability -->
+        <section id="home" class="relative bg-gray-800 bg-cover bg-center text-white pt-48 pb-32" style="background-image: url('Yreal_banner_fin.png');">
             <div class="absolute inset-0 bg-black/60"></div>
-
             <div class="relative container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
                     현실의 경계를 넘는<br class="md:hidden"> <span class="text-yr-blue">3차원 디스플레이</span> 기술
@@ -119,6 +113,32 @@
                 </div>
             </div>
         </section>
+
+        <!-- Video Showcase Section -->
+        <section id="showcase" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+            <!-- 
+                이곳에 배경으로 재생할 동영상 파일을 지정합니다.
+                'your-video.mp4' 파일을 HTML 파일과 같은 폴더에 넣고 파일명을 맞춰주세요.
+                동영상 파일이 클 경우 로딩이 길어질 수 있으니 최적화된 파일을 사용하는 것을 권장합니다.
+            -->
+            <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none">
+                <!-- 임시 동영상 소스입니다. 실제 파일로 교체해주세요. -->
+                <source src="yreal_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Video Overlay -->
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 px-6 text-white">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">기술이 현실이 되는 순간</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto">
+                    Young Reality의 라이트필드 디스플레이가 구현하는 생생한 3차원 이미지를 직접 확인해 보세요.
+                </p>
+            </div>
+        </section>
+
 
         <!-- Milestones Section -->
         <section id="milestones" class="section-padding bg-gray-100">
@@ -201,7 +221,7 @@
             <p class="mb-4">&copy; 2024 Young Reality. All Rights Reserved.</p>
             <div class="text-sm text-gray-500">
                 <p>회사명: 영리얼리티 (Young Reality) | 대표: 김영록</p>
-                <p>사업자등록번호: 874-08-02797 | 주소: 서울특별시강남구봉은사로129, 7층727호A-144호</p>
+                <p>사업자등록번호: 874-08-02797 | 주소: 서울특별시 동대문구 회기로 111, 504-4호</p>
             </div>
         </div>
     </footer>
